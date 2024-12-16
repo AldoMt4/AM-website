@@ -98,7 +98,7 @@ body {
     color: #A10332; /* Crimson color for bold text emphasis */
 }
 
-/* Responsive design for smaller screens */
+/* Hide 'Aldo Mata' and center the content on mobile */
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -107,6 +107,16 @@ body {
     
     .about-content {
         max-width: 100%;
+    }
+
+    /* This will center the content and hide any side elements */
+    .about-content h2, .about-content h3, .about-content p, .about-content strong {
+        text-align: center;
+    }
+
+    /* If 'Aldo Mata' is within a specific class, you can hide it like this */
+    .about .aldo-mata {
+        display: none;
     }
 }
 

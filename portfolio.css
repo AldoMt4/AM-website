@@ -34,6 +34,13 @@ body {
     font-weight: 600;
 }
 
+/* Hide the logo on mobile devices */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
 .navbar {
     font-size: 18px;
     display: flex;

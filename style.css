@@ -194,39 +194,4 @@ body {
     }
 }
 
-/* Mobile Toggle Button for Navbar */
-.navbar-toggle {
-    display: none; /* By default, hidden */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.navbar-toggle div {
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    margin: 5px 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar-toggle.open div:nth-child(1) {
-    transform: rotate(45deg);
-    transform-origin: center;
-}
-
-.navbar-toggle.open div:nth-child(2) {
-    opacity: 0;
-}
-
-.navbar-toggle.open div:nth-child(3) {
-    transform: rotate(-45deg);
-    transform-origin: center;
-}
-
-@media (max-width: 768px) {
-    .navbar-toggle {
-        display: flex; /* Show toggle button on mobile */
-    }
-}
-
 

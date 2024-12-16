@@ -36,6 +36,11 @@ body {
     .logo {
         display: none;
     }
+    
+    /* Hide "Aldo Mata" from the header for mobile */
+    .header .name {
+        display: none;
+    }
 }
 
 .navbar a {

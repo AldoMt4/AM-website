@@ -31,15 +31,29 @@ body {
     color: #fff;
 }
 
-/* Hide the logo on mobile devices */
+/* Hide the "Aldo Mata" text on mobile devices */
 @media (max-width: 768px) {
-    .logo {
-        display: none;
-    }
-    
-    /* Hide "Aldo Mata" from the header for mobile */
+    /* Assuming "Aldo Mata" is inside a class called 'name' */
     .header .name {
         display: none;
+    }
+
+    /* Adjust the space for the navbar on mobile */
+    .header {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Stack the navigation items vertically */
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 10px 0; /* Add some padding for mobile navigation */
+        width: 100%; /* Make the links full-width for easier tap */
+        text-align: center; /* Center the text for each link */
     }
 }
 

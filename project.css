@@ -31,6 +31,13 @@ body {
     color: #fff;
 }
 
+/* Hide the logo on mobile devices */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
 .navbar a {
     color: #fff;
     text-decoration: none;

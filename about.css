@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%; 
-    padding: 20px 10%; 
+    padding: 15px 10%; /* Reduced padding */
     background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for header */
     display: flex;
     justify-content: space-between;
@@ -26,20 +26,20 @@ body {
 
 .logo {
     position: relative;
-    font-size: 25px;
+    font-size: 22px; /* Smaller logo font size */
     color: #333; /* Dark gray for logo */
     text-decoration: none;
     font-weight: 600;
 }
 
 .navbar {
-    font-size: 18px;
+    font-size: 16px; /* Smaller font size for navbar */
     display: flex; 
     list-style: none; 
 }
 
 .navbar a {
-    margin-right: 20px; 
+    margin-right: 15px; /* Reduced space between navbar items */
     text-decoration: none; 
     color: #333; 
     transition: color 0.3s; 
@@ -69,8 +69,6 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin-top: 40px; /* Adjust this value to lower the section */
 }
-
-
 
 .heading {
     text-align: center;
@@ -111,3 +109,4 @@ body {
         max-width: 100%;
     }
 }
+

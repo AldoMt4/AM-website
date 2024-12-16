@@ -107,7 +107,19 @@ footer {
     height: 24px;
 }
 
+/* Mobile adjustments */
 @media (max-width: 768px) {
+    /* Hide the 'Aldo Mata' text */
+    .name {
+        display: none;
+    }
+
+    /* Hide the logo */
+    .logo {
+        display: none;
+    }
+
+    /* Adjust project card margins */
     .project-card {
         margin: 20px 5%;
     }

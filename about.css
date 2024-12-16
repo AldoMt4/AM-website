@@ -15,8 +15,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    padding: 15px 10%; /* Reduced padding */
+    width: 100%;
+    padding: 15px 10%;
     background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for header */
     display: flex;
     justify-content: space-between;
@@ -34,15 +34,15 @@ body {
 
 .navbar {
     font-size: 16px; /* Smaller font size for navbar */
-    display: flex; 
-    list-style: none; 
+    display: flex;
+    list-style: none;
 }
 
 .navbar a {
     margin-right: 15px; /* Reduced space between navbar items */
-    text-decoration: none; 
-    color: #333; 
-    transition: color 0.3s; 
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
@@ -98,25 +98,25 @@ body {
     color: #A10332; /* Crimson color for bold text emphasis */
 }
 
-/* Hide 'Aldo Mata' and center the content on mobile */
+/* Hide 'Aldo Mata' logo text on mobile screens */
 @media (max-width: 768px) {
+    .logo {
+        display: none; /* Hide the logo text on small screens */
+    }
+
     .about {
         flex-direction: column;
         padding: 20px; /* Adjust padding for smaller screens */
     }
-    
+
     .about-content {
         max-width: 100%;
     }
 
-    /* This will center the content and hide any side elements */
+    /* Center the content on mobile */
     .about-content h2, .about-content h3, .about-content p, .about-content strong {
         text-align: center;
     }
-
-    /* If 'Aldo Mata' is within a specific class, you can hide it like this */
-    .about .aldo-mata {
-        display: none;
-    }
 }
+
 
